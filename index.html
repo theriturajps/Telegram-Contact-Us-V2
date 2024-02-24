@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>TG Contact</title>
+</head>
+<body>
+
+<!--[ Toast Notification ]-->
+<div id='toast_notification' class='tNtf'></div>
+    
+<div class="container">
+    <form id="telegram_form">
+        <input name="name" type="text" placeholder="Name" required />
+        <input name="email" type="email" placeholder="Email Address" required />
+        <input name="phone" type="tel" placeholder="Phone Number" />
+        <input name="files" type="file" placeholder="Attachments" multiple />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="toast.js"></script>
+<script src="handler.js"></script>
+</body>
+</html>
